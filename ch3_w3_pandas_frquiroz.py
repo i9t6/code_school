@@ -31,6 +31,6 @@ print(df_4)
 
 plt.figure()
 df_4.head(5).plot(kind='pie',title='Zooxo',legend=True,figsize=(10, 10),autopct='%1.1f%%')
-plt.show()
-#plt.savefig("image.png")
+#plt.show()
+plt.savefig("image.png")
 
