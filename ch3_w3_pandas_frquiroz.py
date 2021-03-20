@@ -1,5 +1,5 @@
 #!/home/paco/py3/bin/python
-import numpy as np
+#Python 3.8.5
 import pandas as pd 
 from datetime import date
 import matplotlib.pyplot as plt
@@ -27,8 +27,8 @@ print("\n\n 4.Which  device  families  from  customer Zooxo had affectations  in
 df_4 = df[(df["customer"] == "Zooxo") &  (df["date"]>=pd.Timestamp("2021-1-1")) ].groupby(['Region','device_family'])['device_family'].count()
 print(df_4)
 
-# 5.For the latter, plot a pie chart, adding a title and percentages
-
+print("\n\n5.For the latter, plot a pie chart, adding a title and percentages")
+print('\n image saved "image.png" file in')
 plt.figure()
 df_4.head(5).plot(kind='pie',title='Zooxo',legend=True,figsize=(10, 10),autopct='%1.1f%%')
 #plt.show()
