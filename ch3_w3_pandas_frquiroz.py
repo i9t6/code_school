@@ -30,8 +30,7 @@ print(df_4)
 # 5.For the latter, plot a pie chart, adding a title and percentages
 
 plt.figure()
-plot = df_4.plot.pie(figsize=(10, 10),autopct='%1.1f%%')
-plot.axes.get_yaxis().set_visible(False)
-plt.title('Info from client Zooxo')
+df_4.head(5).plot(kind='pie',title='Zooxo',legend=True,figsize=(10, 10),autopct='%1.1f%%')
 plt.show()
+#plt.savefig("image.png")
 
