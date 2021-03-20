@@ -32,6 +32,6 @@ print(df_4)
 plt.figure()
 plot = df_4.plot.pie(figsize=(10, 10),autopct='%1.1f%%')
 plot.axes.get_yaxis().set_visible(False)
-plt.title('Client Zooxo')
+plt.title('Info from client Zooxo')
 plt.show()
 
