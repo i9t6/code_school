@@ -10,7 +10,7 @@ my_logger.setLevel(logging.DEBUG)
 a = 1
 b = 2
 c = a + b
-
+#f.write(f' show {c} '.center(20, '='))
 texto = "algo muy largo para nada"
 
 my_logger.debug(f"debug message {a}")
